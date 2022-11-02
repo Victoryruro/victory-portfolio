@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Cantora One
+- Font Author: Copyright (c) 2012, Pablo Impallari (www.impallari.com|impallari@gmail.com), Rodrigo Fuenzalida (www.rfuenzalida.com|hello@rfuenzalida.com) with Reserved Font Name Cantora.
+- Font Source: http://fonts.gstatic.com/s/cantoraone/v17/gyB4hws1JdgnKy56GB_JX6zdZ4vZVbgZ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

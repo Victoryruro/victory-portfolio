@@ -1,0 +1,256 @@
+/*general */
+*{ 
+    margin-left: 0 ;
+    margin-right: 0;
+}
+body{
+    background-color: aliceblue;
+    margin: auto 0;
+    display: grid;
+   /* grid-template-columns:repeat( auto-fill, minmax(250px 1fr) );*/
+   /* grid-template-rows: 7rem 80vh 1fr 100px;*/
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:2px;
+    margin: 0 auto;
+    
+    height: 100vh;
+    
+    
+}
+/*header*/
+header{
+    grid-column: span 4;
+    grid-row: span 1;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    
+    background-color:rgb(30, 149, 209);
+    /*justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    flex-grow: 1;
+    flex-shrink: 1;*/
+    align-items: center;
+    
+    
+    
+}
+.sticky{
+    position: fixed;
+    top: 0;
+}
+.header-a , li{
+    list-style-type: none;
+    text-decoration: none;
+    
+    color: rgb(0, 0, 238);
+    font-size: larger;
+    padding: 9px;
+    margin: 20px;
+}
+.header-a:hover{
+    border-left: 2px solid rgba(0,0,0,0.8);
+    border-bottom: 2px solid rgba(0,0,0,0.8);
+    border-bottom-left-radius:30px;
+}
+header >a:active{
+    color:rgb(0, 0, 238) ;
+}
+
+#contact{
+    margin-left: auto;
+}
+
+/*section*/
+section{
+    width: 100%;
+    height:100%;
+    border: 1px solid rgba(21, 178, 202, 0.837);
+    background-color: rgba(30, 149, 209, 0.582);
+}
+/*#cover */
+
+#cover{
+    grid-column: span 4; 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 60vh;
+    background-color: white;
+    
+    
+    
+    
+    
+     
+}
+.coverpic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    /*
+#cover:before{
+    background: url("undraw_Web_development_0l6v.png") no-repeat center center ;Photo by <a href="https://unsplash.com/@alesnesetril?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ales Nesetril</a> on <a href="https://unsplash.com/s/photos/technology?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    
+    background-size: cover;
+    background-color: rgba(23, 104, 171, 0.622);
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}*/
+.coverpic > img{
+   /* position: relative;
+    text-align: center;
+    align-self: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgba(7, 2, 40, 0.893);
+    padding: 7px;
+    border-radius: 400px/100px ;
+    border: 3px solid navy;
+    background-color: rgb(30, 149, 209);
+    box-shadow: 10px 5px 24px #a6b4c8a9, inset 2px 19px 0px #ffffffc5;*/
+    width: 30rem;
+}
+/*project*/
+
+
+#project{
+    grid-column: span 4;
+    margin: auto 0;
+    background-color: rgba(23, 104, 171, 0.622);
+    overflow: visible;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    row-gap: 5px;*/
+}
+.project-wrapper{
+ 
+    width: 90%;
+    
+}
+.project-con{
+    display: flex;
+    justify-content:space-evenly;
+    
+    flex-wrap: wrap;
+}
+.pro-item{
+    flex-basis: 33.33%;
+    max-width: 32.333%;
+    border: 1px solid black;
+
+    flex-grow: 2;
+}
+section  .heading-p  h1{
+    text-align: center;
+    padding: 5px;
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: navy;
+}
+/*footer*/
+
+footer{
+    grid-column: span 4;
+    width: 100%;
+    height: 4rem;
+    margin: 0px auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(30, 149, 209);
+}
+h6{
+    
+    font-size: 1rem;
+    color: #2029e2f4;
+    padding:5px ;
+    
+    border-radius: 50px/100px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: wrap;
+}
+/*media queries */
+@media only screen and (max-width:970px){
+    .pro-item{
+        flex-basis: 48%;
+        max-width: 45%;
+    }
+
+}
+
+@media only screen and (min-width:700px) {
+    .firstproject > img{
+        transition: ease-in-out 700ms;
+    }
+    .firstproject > img:hover{
+        
+        transform: scale(2.0,2.0);
+    }
+    
+}
+@media only  screen and (max-width:600px){
+    header{
+        font-size: 12px;
+        padding: 0;
+        justify-content: center;
+        
+    }
+    #clean-img{
+        height: 150px;
+    }
+    .header-a{
+        font-size: 10px;
+        
+    }
+    #contact{
+        margin-right:auto;
+    }
+    img:hover{
+        transition: none;
+        transform:none;
+    }
+    .firstproject{
+        width: 350px;
+        height: 415px;
+    }
+    .words > img{
+        width: 25rem;
+    }
+    /* body{
+        width: 30rem;
+    } */
+    .coverpic img{
+        
+        width: 100%;
+    }
+    .pro-item{
+        flex-basis: 85%;
+        max-width: 88%;
+    }
+}
+
+

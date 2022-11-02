@@ -1,0 +1,13 @@
+{
+    "liveServer.settings.port": 5503,
+    "git.ignoreLimitWarning": true,
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "html"
+    ]
+}
