@@ -1,0 +1,174 @@
+@font-face {
+    font-family:outfit ;
+    src: url("./fonts/static/Outfit-Regular.ttf");
+}
+*{
+    font-family:outfit ;
+    
+}
+body{
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(247, 247, 247, 0.634);
+}
+/*header*/
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    
+    align-items: center;
+    z-index: 2;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+}
+
+.header-a , li{
+    list-style-type: none;
+    text-decoration: none;
+    
+    
+    font-size:large;
+    padding: 9px;
+    margin: 20px;
+    
+}
+
+header >a:active{
+    color:rgb(180, 180, 223) ;
+}
+header{
+    background-color: rgba(12, 12, 2, 0.821);
+    justify-content: center;
+}
+.sticky>.header-a{
+    color: rgba(205, 205, 231, 0.782);
+    transition: border 3s ease-in-out,background-color 1s ease-in-out,;
+    
+}
+header>a:hover{
+    border-top: 1px solid rgb(233, 233, 237);
+    border-bottom: 2px solid rgb(211, 211, 219);
+    
+
+
+}
+/* header>a::after{
+    content: icon;
+    padding: 50px;
+    position: absolute;
+} */
+#contact{
+    margin-left: auto;
+    border-bottom:0.5px solid rgba(205, 205, 231, 0.782)
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.contact-wrapper{
+    display: flex;
+    width: 100%;
+    background-color: #f5f9f5;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+.contact{
+    flex-basis: 700px;
+    background-color:  rgba(12, 12, 2, 0.821);
+    display: flex;
+    flex-wrap: wrap;
+
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 5% 2%;
+    justify-content: center;
+    
+
+}
+.list{
+    flex-basis: 50%;
+    max-width: 45%;
+    background-color: rgb(241, 239, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+
+
+}
+.list a{
+    display: flex;
+    align-items: center;
+    width: -webkit-fill-available;
+    text-decoration: none;
+    justify-content: space-around;
+}
+.list a h4{
+    text-decoration: none;
+
+}
+.gmail{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgba(12, 12, 2, 0.821);
+    padding: 7px 12px;
+    margin-top: 15px;
+    border-radius: 41px/66px;
+    color: rgba(247, 247, 247, 0.634);
+    border-color: rgba(12, 12, 2, 0.821);
+}
+.gmail:hover{
+    box-shadow: 
+                -6px  0px  20px 20px rgba(12, 12, 2, 0.821)    ;
+}
+.gmail a{
+    font-size: 1em;
+    color: rgba(247, 247, 247, 0.634);
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: rgba(12, 12, 2, 0.821);
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 10vh;
+    margin: 0px auto;
+    padding-top: 5px;
+    vertical-align: middle;
+    text-align: center;
+    color: rgba(247, 247, 247, 0.634);
+    
+}
+@media only  screen and (max-width:600px){
+    header{
+        font-size: 10px;
+        padding: 0;
+        justify-content: flex-start;
+        
+    }
+    .header-a {
+        font-size: 10px;
+        padding: 0px;
+        margin: 12px;
+        
+        
+    }
+    #contact{
+        margin-right:auto;
+    }
+    .contact-wrapper{
+        margin-top: 40px;
+    }
+}

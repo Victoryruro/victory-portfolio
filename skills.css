@@ -65,6 +65,11 @@ header>a::after{
 }
 #contact{
     margin-left: auto;
+    
+}
+#ourteam{
+    border-bottom:0.5px solid midnightblue;
+
 }
 /* main */
 main{
@@ -143,6 +148,21 @@ svg{
     max-width: 100%;
     padding-left: 12px;
     padding-right: 12px;
+}
+footer{
+    width: 100%;
+    /* background-color:#6b63ffc1; */
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 4.4rem;
+    padding-top: 10px;
+    color: #3f3d56;
+    margin: 0px auto;
+    margin-top: 3rem;
+    vertical-align: middle;
+    text-align: center;
+    
 }
 /* media query */
 @media only  screen and (max-width:850px){

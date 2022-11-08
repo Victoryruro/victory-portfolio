@@ -50,6 +50,9 @@ header>a:visited{
 #contact{
     margin-left: auto;
 }
+#about{
+    border-bottom:0.5px solid rgba(250, 248, 248, 0.8)
+}
 /*media queries */
 
 /* container */
@@ -100,10 +103,11 @@ main{
 
     
 }
-img{
-    width: 250px;
+.intro-text> img{
+    width: 80%;
+    height: 350px;
     margin-bottom: 12px;
-    margin-top: 5px;
+    margin-top: 20px;
     border-radius: 20% 50% ;
     
 }
@@ -161,6 +165,7 @@ a{
 a:active{
     color: rgba(0, 0, 238, 0.468);
 }
+
 /* footer */
 footer{
     width: 100%;
@@ -175,6 +180,14 @@ footer{
     
 }
 /* media query */
+@media only screen and (min-width:900px) {
+    .intro-text>.img{
+        align-self: flex-start;
+        margin-left:-400px;
+        padding-bottom: 5px;
+    }
+    
+}
 @media only screen and (max-width:900px){
     .intro{
         /* height: 90vh; */
@@ -189,6 +202,15 @@ footer{
         line-height:23px;
         margin-bottom: 15px;
         word-spacing: 2px;
+    }
+    .intro-text> img{
+        width: 250px;
+        height: 60%;
+    }
+    .intro-text>.img{
+        align-self: flex-start;
+        
+        padding-bottom: 5px;
     }
     
 }
@@ -213,7 +235,7 @@ footer{
     } */
     
     .intro{
-        height: 85vh;
+        /* height: 85vh; */
         padding: 5px;
         align-content: flex-start;
         margin-top: 2em;
@@ -225,6 +247,10 @@ footer{
         padding-top: 20px;
         margin: 0px;
         justify-content: center;
+    }
+    .intro-text >img{
+        width: 80%;
+        height:60%;
     }
     a{
         margin-top: 5px;

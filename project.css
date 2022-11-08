@@ -9,7 +9,7 @@ body{
     display: grid;
    /* grid-template-columns:repeat( auto-fill, minmax(250px 1fr) );*/
    /* grid-template-rows: 7rem 80vh 1fr 100px;*/
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding:2px;
@@ -63,6 +63,9 @@ header >a:active{
 
 #contact{
     margin-left: auto;
+}
+#products{
+    border-bottom:0.5px solid rgba(0,0,0,0.8)
 }
 
 /*section*/
@@ -156,7 +159,7 @@ section{
     flex-basis: 33.33%;
     max-width: 32.333%;
     border: 1px solid black;
-
+    margin-bottom: 20px;
     flex-grow: 2;
 }
 section  .heading-p  h1{
@@ -167,6 +170,14 @@ section  .heading-p  h1{
     font-weight: bolder;
     color: navy;
 }
+.pro-item h4{
+    text-align: center;
+    opacity: 0.7;
+}
+.pro-item a{
+    text-align: center;
+}
+
 /*footer*/
 
 footer{
@@ -219,6 +230,11 @@ h6{
         justify-content: center;
         
     }
+    
+.header-a , li{
+    padding: 3px;
+    padding-left: 0px;
+}
     #clean-img{
         height: 150px;
     }
