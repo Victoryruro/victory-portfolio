@@ -238,13 +238,13 @@ footer{
         /* height: 85vh; */
         padding: 5px;
         align-content: flex-start;
-        margin-top: 2em;
+        margin-top: 0em;
         backdrop-filter: unset;
         -webkit-backdrop-filter: unset;
         justify-content: center;
     }
     .intro-text{
-        padding-top: 20px;
+        padding-top: 10px;
         margin: 0px;
         justify-content: center;
     }

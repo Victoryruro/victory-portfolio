@@ -112,6 +112,11 @@ main{
     width: -webkit-fill-available;
     text-decoration: none;
     justify-content: space-around;
+    color: rgb(0, 0, 238);
+}
+.list a:active{
+    color: rgb(0, 0, 238);
+
 }
 .list a h4{
     text-decoration: none;
@@ -127,10 +132,15 @@ main{
     border-radius: 41px/66px;
     color: rgba(247, 247, 247, 0.634);
     border-color: rgba(12, 12, 2, 0.821);
+    transition: box-shadow 1s ease;
 }
 .gmail:hover{
     box-shadow: 
-                -6px  0px  20px 20px rgba(12, 12, 2, 0.821)    ;
+                0px  -3px  0px 0px rgba(12, 12, 2, 0.821) ,
+                -1px  -6px  0px 0px rgba(12, 12, 2, 0.821) ,
+                2px  -9px  0px 0px rgba(12, 12, 2, 0.821) ,
+                inset 2px 2px 0 0  rgba(205, 205, 231, 0.782),
+                inset 0px 8px 20px 20px rgba(205, 205, 231, 0.782)   ;
 }
 .gmail a{
     font-size: 1em;
@@ -143,7 +153,7 @@ footer{
     font-size: large;
     font-weight: bold;
     text-transform: uppercase;
-    height: 10vh;
+    height: 9.2vh;
     margin: 0px auto;
     padding-top: 5px;
     vertical-align: middle;
