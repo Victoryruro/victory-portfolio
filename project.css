@@ -252,10 +252,10 @@ h6{
         
     }
     
-.header-a , li{
-    padding: 3px;
-    padding-left: 0px;
-}
+    .header-a , li{
+        padding: 3px;
+        padding-left: 0px;
+    }
     #clean-img{
         height: 150px;
     }
